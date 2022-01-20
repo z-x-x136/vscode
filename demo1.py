@@ -51,3 +51,16 @@ class Person():
         print(dog.name+"被咬了")
         print(dog.name+"扣了"+self.attack_val)
         print(dog.name+"还剩"+dog.life_val)
+def find(person_age):         
+    if person_age<18:
+            person_attack_val=20
+    elif person_age>=18:
+            person_attack_val=50
+    return person_attack_val
+
+p1=Person("zxx",21,100)
+print(find(21))
+print(p1)
+print(p1.attack("mjj",50,100))
+            
+    
